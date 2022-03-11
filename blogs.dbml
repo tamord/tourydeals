@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="adsrush" Class="blogsDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=adsrush.database.windows.net;Initial Catalog=adsrush;User ID=tamordy;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="adsrushConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Table_MyTouristbook_Blogs" Member="Table_MyTouristbook_Blogs">
+    <Type Name="Table_MyTouristbook_Blog">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="blog_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="startdate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="active" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="authoraid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="authorusername" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="title" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="body" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="subniche" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="imageurl" Type="System.String" DbType="NVarChar(1500)" CanBeNull="true" />
+      <Column Name="priority" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="sponsored" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="featured" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="popular" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="body2" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="body3" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="dest1" Type="System.String" DbType="NVarChar(1500)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

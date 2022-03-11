@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="adsrush" Class="CountriesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=adsrush.database.windows.net;Initial Catalog=adsrush;User ID=tamordy;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="adsrushConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Table_Countries" Member="Table_Countries">
+    <Type Name="Table_Country">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="country" Type="System.String" DbType="NVarChar(1500)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Table_Cities" Member="Table_Cities">
+    <Type Name="Table_City">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="country" Type="System.String" DbType="NVarChar(1500)" CanBeNull="true" />
+      <Column Name="city" Type="System.String" DbType="NVarChar(1500)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Table_Country_Flags" Member="Table_Country_Flags">
+    <Type Name="Table_Country_Flag">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="country" Type="System.String" DbType="NVarChar(1500)" CanBeNull="true" />
+      <Column Name="flag_image" Type="System.String" DbType="VarChar(2255)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Table_MyTouristbook_Countries" Member="Table_MyTouristbook_Countries">
+    <Type Name="Table_MyTouristbook_Country">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="country" Type="System.String" DbType="NVarChar(1500)" CanBeNull="true" />
+      <Column Name="icon" Type="System.String" DbType="NVarChar(3500)" CanBeNull="true" />
+      <Column Name="graylogo" Type="System.String" DbType="NVarChar(3500)" CanBeNull="true" />
+      <Column Name="whitelogo" Type="System.String" DbType="NVarChar(3500)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Table_MyTouristbook_Cities" Member="Table_MyTouristbook_Cities">
+    <Type Name="Table_MyTouristbook_City">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="country" Type="System.String" DbType="NVarChar(1500)" CanBeNull="true" />
+      <Column Name="city" Type="System.String" DbType="NVarChar(1500)" CanBeNull="true" />
+      <Column Name="graylogo" Type="System.String" DbType="NVarChar(3500)" CanBeNull="true" />
+      <Column Name="whitelogo" Type="System.String" DbType="NVarChar(3500)" CanBeNull="true" />
+      <Column Name="icon" Type="System.String" DbType="NVarChar(3500)" CanBeNull="true" />
+      <Column Name="rank" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
